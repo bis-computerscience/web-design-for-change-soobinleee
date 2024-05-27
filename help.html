@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fa; 
+}
+
+#help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin:30px;
+}
+
+video {
+  width: 900px;
+  height: 506px;
+  z-index: 1;
+  margin-top:20px;
+  margin-bottom: 80px;
+}
+
+#help button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 20px;
+  background-color: #f2f4f3;
+  transition-duration: 0.4s;
+}
+
+#help button:hover {
+  opacity: 0.7;
+}
+
+#help p {
+  font-size:20px;
+}
+
+#help h5 {
+  font-size:25px;
+}
+
+#explanation p {
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0a0908;
+}
+
+#help h5:hover {
+  color:#535353;
+}
+
+#explanation {
+  background-color: rgba(169, 146, 125, 0.8);
+  align-items: center;
+  padding: 20px;
+  position: absolute; 
+  top: 65%; 
+  z-index: 2;
+  width: 50%;
+  text-align: center;
+}
+
+    </style>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="image/logo.png" alt="Paws for Change Logo" height="50" width="120"></a></li>
+            <li><a href="problem.html">Why is it a problem</a></li>
+            <li><a href="news.html">Latest News</a></li>
+            <li><a href="help.html">How can you help</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li id="searchFormContainer">
+                <form id="searchForm" action="#" method="GET">
+                    <input type="text" id="searchInput" name="search" placeholder="Search...">
+                    <button type="submit" class="icon-button">
+                        <img src="image/search.png" alt="Search Icon" width="20" height="20">
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <header>
+            <h1>How can you help</h1>
+        </header>
+        <div id="help" class="help">
+          <p>We would like to introduce 'Stray Animal Foundation India' organisation.</p>
+          <a href="https://strayanimalfoundationindia.org/" target="_blank">
+              <h5>Engage with the movement through donations!</h5>
+            </a>
+          <div id="video">
+            <video autoplay loop muted>
+                <source src="image/help/streetvideo.mp4" type="video/mp4">
+            </video>
+        </div>
+            <div id="explanation">
+                <p>Stray Animal Foundation India emerges as a beacon of hope</p>
+                <p>for street dogs nationwide. With a focused dedication on rescuing,</p>
+                <p>nurturing, and advocating for these resilient beings, the foundation stands as a steadfast ally in their journey to a better life.</p>
+                <p>Together, let's make a tangible difference in the lives of India's street dogs.</p>
+                <button id="donation" type="button">
+                    <a href="https://strayanimalfoundationindia.org/" target="_blank">Stray Animal Foundation India ></a>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <h3>&copy; 2024 @Pawsforchangeindia. All rights reserved.</h3>
+      <div>
+          <ul>
+              <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="image/insta.png" alt="Instagram" width="35" height="35"></a></li>
+              <li><a href="https://www.youtube.com/" target="_blank"><img src="image/youtube.png" alt="YouTube" width="35" height="30"></a></li>
+              <li><a href="https://mail.google.com/mail/u/0/" target="_blank"><img src="image/email.webp" alt="Email" width="35" height="30"></a></li>
+          </ul>
+      </div>
+  </footer>
+</body>
+</html>

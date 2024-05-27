@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+    body {
+    background-color: #f2f4f3;
+}
+
+main p {
+    font-size: 25px;
+    margin-top:35px;
+    color: #0a0908;
+    text-align: center;
+    padding: 0 50px;
+}
+
+#news {
+    display: flex;
+    margin: 50px;
+    align-items: center;
+}
+
+#left,
+#right {
+    flex: 1;
+    margin: 10px;
+    height:1500px;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+iframe {
+  margin-bottom: 30px;  
+}
+
+</style>
+</head>
+<body>
+
+    <<header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="image/logo.png" alt="Paws for Change Logo" height="50" width="120"></a></li>
+                <li><a href="problem.html">Why is it a problem</a></li>
+                <li><a href="news.html">Latest News</a></li>
+                <li><a href="help.html">How can you help</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li id="searchFormContainer">
+                    <form id="searchForm" action="#" method="GET">
+                        <input type="text" id="searchInput" name="search" placeholder="Search...">
+                        <button type="submit" class="icon-button">
+                            <img src="image/search.png" alt="Search Icon" width="20" height="20">
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <header>
+            <h1>Latest News</h1>
+        </header>
+        <p>Stay informed on the latest updates regarding India's stray dog issue with our 'Latest News' page!</p>
+        <div id="news" class="flex-container">
+            <div id="left" class="flex-item">
+                <iframe height="100%" src="https://www.cbsnews.com/news/3-crocodiles-could-have-easily-devoured-a-stray-dog-in-their-river-they-pushed-it-to-safety-instead/" width="100%" height="600" frameborder="0" scrolling="auto"></iframe>
+            </div>
+            <div id="right" class="flex-item">
+                <iframe id="youtubevideo" width="700" height="400" src="https://www.youtube.com/embed/aFrx1EwP2uE?si=w1Ko4X0_rPA92NC2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe height="600px" src="https://www.nbcnews.com/news/world/new-delhi-g20-india-world-leaders-bulldozing-homes-dogs-monkeys-rcna103706" width="100%" height="600" frameborder="0" scrolling="auto"></iframe>
+                <iframe height="600px" src="https://www.cbsnews.com/news/india-feral-dogs-kill-children-in-attacks-around-sitapur/" width="100%" height="600" frameborder="0" scrolling="auto"></iframe>
+            </div>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <h3>&copy; 2024 @Pawsforchangeindia. All rights reserved.</h3>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="image/insta.png" alt="Instagram" width="35" height="35"></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="image/youtube.png" alt="YouTube" width="35" height="30"></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/" target="_blank"><img src="image/email.webp" alt="Email" width="35" height="30"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

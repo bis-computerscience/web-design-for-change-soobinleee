@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #5e503f;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f4f3;
+            height: 500px;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        section h2 {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #5e503f;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #22333b;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.png" alt="Logo" height="50px" width="120px"></a></li>
+                <li><a href="problem.html">Why is it a problem</a></li>
+                <li><a href="news.html">Latest News</a></li>
+                <li><a href="help.html">How can you help</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li id="searchFormContainer">
+                    <form id="searchForm" action="#" method="GET">
+                        <input type="text" id="searchInput" name="search" placeholder="Search...">
+                        <button type="submit" class="icon-button">
+                            <img src="search.png" alt="Icon" width="20px" height="20px">
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Quiz Result</h2>
+            <p id="quizScore">Your score will be displayed here.</p>
+            <a href="index.html">
+                <button type="button">Go back to Home</button>
+            </a>
+        </section>
+    </main>
+</body>
+</html>

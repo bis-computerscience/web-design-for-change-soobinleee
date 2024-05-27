@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Raleway';
+        }
+
+        main p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px; 
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            width: 800px; 
+            height: 450px;
+            border: 10px solid #ccc;
+        }
+
+        .explanation {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        
+        .column {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        h6 {
+            font-size: 15px;
+            font-weight: lighter;
+            font-family: "Playfair Display", serif;
+            font-style: light;
+        }
+
+        #myBtn {
+            border-radius: 20px;
+            height:30px;
+            width:30px;
+            cursor: pointer;
+            font-size:15px;
+        }
+
+        #myBtn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2), 0 17px 50px 0 rgba(0,0,0,0.2);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .modal-content h2{
+            font-size:20px;
+            margin-bottom: 5px;
+        }
+
+        .modal-content p {
+            font-size:15px
+        }
+
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            padding-right: 10px;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="image/logo.png" alt="Paws for Change Logo" height="50" width="120"></a></li>
+                <li><a href="problem.html">Why is it a problem</a></li>
+                <li><a href="news.html">Latest News</a></li>
+                <li><a href="help.html">How can you help</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li id="searchFormContainer">
+                    <form id="searchForm" action="#" method="GET">
+                        <input type="text" id="searchInput" name="search" placeholder="Search...">
+                        <button type="submit" class="icon-button">
+                            <img src="image/search.png" alt="Search Icon" width="20" height="20">
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1>Why is it a problem</h1>
+        </header>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/JkPFsSSLgGU?si=aDEKKGMQIsmBj9Um" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>Why is growing number of street dog a problem?</p>
+        <div class="explanation">
+            <div class="column">
+                <h6>
+                    Stray dogs in India present a multifaceted challenge, primarily due to their unchecked proliferation and the absence of effective management strategies. This unchecked growth has led to numerous interconnected problems, with public health being at the forefront. Stray dogs are notorious carriers of diseases, most notably rabies, which remains a significant public health concern across the country. Rabies, transmitted through dog bites, poses a serious threat to human lives, resulting in numerous fatalities annually. Moreover, other diseases such as distemper and parvovirus can also thrive among stray populations, further exacerbating health risks for both humans and other animals.
+                </h6>
+            </div>
+            <div class="column">
+                <h6>
+                    Beyond health hazards, the unchecked population of stray dogs raises safety concerns, particularly in densely populated urban areas. Instances of aggressive behavior or territorial instincts can escalate into attacks on humans, especially vulnerable groups such as children or the elderly. While the majority of stray dogs are not inherently aggressive, factors such as hunger, fear, or illness can trigger aggressive responses, posing a significant risk to public safety.
+                </h6>
+            </div>
+            <button id="myBtn">?</button>
+        </div>
+    </main>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>learn more about: Rabies</h2>
+            <p>Rabies, a deadly viral disease transmitted through the bites of infected animals, is particularly concerning in regions with high populations of stray dogs. Stray dogs, often unvaccinated and free-roaming, significantly increase the risk of rabies transmission to humans and other animals. Effective management and vaccination of stray dogs are crucial to controlling the spread of rabies and protecting public health.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <h3>&copy; 2024 @Pawsforchangeindia. All rights reserved.</h3>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="image/insta.png" alt="Instagram" width="35" height="35"></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="image/youtube.png" alt="YouTube" width="35" height="30"></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/" target="_blank"><img src="image/email.webp" alt="Email" width="35" height="30"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
